@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+
+    <!-- CSS style sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- jQuery - Latest compiled and minified  JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Asap:600|Assistant:300" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Chosen: JavaScript plugin that makes select boxes user-friendly-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+
+</head>
+
+<style>
+
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="container-fluid" id="top">
+
+
+            <h1>Survey Questions</h1>
+            <hr>
+
+            <h2>
+                <strong>About You</strong>
+            </h2>
+
+            <div class="row">
+                <div class="col-2"> </div>
+
+                <div class="col-8">
+                    <h4>Name (Required)</h4>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+
+
+                <div class="col-8">
+                    <h4>Link to Photo Image (Required)</h4>
+                    <input type="text" id="photo" class="form-control" required>
+                </div>
+                <div class="col-2"></div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h3>
+                        <strong>Question 1</strong>
+                    </h3>
+                    <h4>Walks on the beach are for stray dogs and are not romantic.</h4>
+                    <select class="chosen-select" id="q1">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+
+                <div class="col">
+                    <h3>
+                        <strong>Question 2</strong>
+                    </h3>
+                    <h4>You learn from experiences not from advice or reading.</h4>
+                    <select class="chosen-select" id="q2">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col">
+                    <h3>
+                        <strong>Question 3</strong>
+                    </h3>
+                    <h4>Sunrises are for those who haven't yet slept.
+                    </h4>
+                    <select class="chosen-select" id="q3">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="col">
+                    <h3>
+                        <strong>Question 4</strong>
+                    </h3>
+                    <h4>You prefer to uberEats because you hate doing dishes.</h4>
+                    <select class="chosen-select" id="q4">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br><br>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h3>
+                        <strong>Question 5</strong>
+                    </h3>
+                    <h4>People can rarely upset you, unless they do or say something that you wouldn't do or say
+                        yourself.</h4>
+                    <select class="chosen-select" id="q5">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+
+                <div class="col">
+                    <h3>
+                        <strong>Question 6</strong>
+                    </h3>
+                    <h4>It is often difficult for you to relate to other people’s feelings because you're always right
+                        and know what is best.</h4>
+                    <select class="chosen-select" id="q6">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h3>
+                        <strong>Question 7</strong>
+                    </h3>
+                    <h4>In a discussion, you usually try to convince pepole why you are right, rather than listening to
+                        other people's points of view.</h4>
+                    <select class="chosen-select" id="q7">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <h3>
+                        <strong>Question 8</strong>
+                    </h3>
+                    <h4>You rarely get carried away by fantasies and ideas. You require plans, backup plans and lots of
+                        research.</h4>
+                    <select class="chosen-select" id="q8">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+
+                    <h3>
+                        <strong>Question 9</strong>
+                    </h3>
+                    <h4>You think books are for coffee tables and to prop up your iPad when you can't find the case and
+                        you want to binge watch Silicon Valley.</h4>
+                    <select class="chosen-select" id="q9">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <h3>
+                        <strong>Question 10</strong>
+                    </h3>
+                    <h4>You're more likely to buy a Four Wheel Drive not because you bush bashing or have a bunch of
+                        kids but because you like the way it looks. </h4>
+                    <select class="chosen-select" id="q10">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+        </div class="container">
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a> |
+                    <a href="https://github.com/RichardTaing/FriendFinder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal-->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            Modal content
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">
+                        <strong>Best Match</strong>
+                    </h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "95%"
+            }
+        };
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+        // form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+            // If all required fields are filled
+            if (validateForm()) {
+                // Create an object for the user"s data
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+                // AJAX post the data to the friends API.
+                $.post("/api/friends", userData, function (data) {
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
