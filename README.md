@@ -1,2 +1,20 @@
 # FriendFinder
-A compatibility-based "FriendFinder" application. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+
+Take this 10 question survey to find your best match.
+
+[App deployed on Heroku](https://rtaing-friendfinder.herokuapp.com/home)
+
+##### Local Installation:
+
+- git clone https://git.heroku.com/rtaing-friendfinder.git
+
+* cd FriendFinder
+* npm install
+
+##### Running Locally
+
+To run the application locally and access it in your browser, set the PORT environment variable to the value of your choice.
+
+#### Technologies Used:
+
+HTML, CSS, Bootstrap, JavaScript, Express, Node.js.
