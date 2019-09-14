@@ -15,8 +15,8 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-app.use("/assets", express.static(path.join(__dirname, "app/public/assets")));
+app.use(bodyParser.text());
+app.use(express.static(path.join(__dirname, "app/public")));
 
 //ROUTER
 //the routes/maps of how to respond when users enter or request information from the URLS
